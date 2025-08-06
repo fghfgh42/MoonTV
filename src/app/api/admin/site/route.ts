@@ -35,6 +35,7 @@ export async function POST(request: NextRequest) {
       SiteInterfaceCacheTime,
       ImageProxy,
       DoubanProxy,
+      DisableYellowFilter,
     } = body as {
       SiteName: string;
       Announcement: string;
@@ -42,6 +43,7 @@ export async function POST(request: NextRequest) {
       SiteInterfaceCacheTime: number;
       ImageProxy: string;
       DoubanProxy: string;
+      DisableYellowFilter: boolean;
     };
 
     // 参数校验
@@ -51,7 +53,8 @@ export async function POST(request: NextRequest) {
       typeof SearchDownstreamMaxPage !== 'number' ||
       typeof SiteInterfaceCacheTime !== 'number' ||
       typeof ImageProxy !== 'string' ||
-      typeof DoubanProxy !== 'string'
+      typeof DoubanProxy !== 'string' ||
+      typeof DisableYellowFilter !== 'boolean'
     ) {
       return NextResponse.json({ error: '参数格式错误' }, { status: 400 });
     }
@@ -65,7 +68,7 @@ export async function POST(request: NextRequest) {
       const user = adminConfig.UserConfig.Users.find(
         (u) => u.username === username
       );
-      if (!user || user.role !== 'admin') {
+      if (!user || user.role !== 'admin' || user.banned) {
         return NextResponse.json({ error: '权限不足' }, { status: 401 });
       }
     }
@@ -78,6 +81,7 @@ export async function POST(request: NextRequest) {
       SiteInterfaceCacheTime,
       ImageProxy,
       DoubanProxy,
+      DisableYellowFilter,
     };
 
     // 写入数据库
