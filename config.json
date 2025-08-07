@@ -23,34 +23,34 @@
       "api": "https://tyyszy.com/api.php/provide/vod",
       "name": "天涯资源"
     },
-    "ffzy": {
-      "api": "http://ffzy5.tv/api.php/provide/vod",
-      "name": "非凡影视",
-      "detail": "http://ffzy5.tv"
-    },
-    "zy360": {
-      "api": "https://360zy.com/api.php/provide/vod",
-      "name": "360资源"
-    },
-    "maotaizy": {
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
-      "name": "茅台资源"
-    },
-    "wolong": {
-      "api": "https://wolongzyw.com/api.php/provide/vod",
-      "name": "卧龙资源"
-    },
-    "jisu": {
-      "api": "https://jszyapi.com/api.php/provide/vod",
-      "name": "极速资源",
-      "detail": "https://jszyapi.com"
-    },
-    "dbzy": {
-      "api": "https://dbzy.tv/api.php/provide/vod",
-      "name": "豆瓣资源"
-    },
-    "mozhua": {
-      "api": "https://mozhuazy.com/api.php/provide/vod",
+    "ffzy": {"ffzy": {
+      "api": "http://ffzy5.tv/api.php/provide/vod","api": "http://ffzy5.tv/api.php/provide/vod",
+      "名称": "非凡影视""name": "非凡影视",
+      "detail": "http://ffzy5.tv""detail": "http://ffzy5.tv"
+    }},
+    "zy360": {"zy360": {
+      "api": "https://360zy.com/api.php/provide/vod","api": "https://360zy.com/api.php/provide/vod",
+      "名称": "360资源""name": "360资源"
+    }},
+    "maotaizy": {"maotaizy": {
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod","api": "https://caiji.maotaizy.cc/api.php/provide/vod",
+      "名称": "茅台资源""name": "茅台资源"
+    }},
+    "卧龙": {"wolong": {
+      "api": "https://wolongzyw.com/api.php/provide/vod","api": "https://wolongzyw.com/api.php/provide/vod",
+      "名称": "卧龙资源""name": "卧龙资源"
+    }},
+    "jisu": {"jisu": {
+      "api": "https://jszyapi.com/api.php/provide/vod","api": "https://jszyapi.com/api.php/provide/vod",
+      "名称": "极速资源""name": "极速资源",
+      "detail": "https://jszyapi.com""detail": "https://jszyapi.com"
+    }},
+    "dbzy": {"dbzy": {
+      "api": "https://dbzy.tv/api.php/provide/vod","api": "https://dbzy.tv/api.php/provide/vod",
+      "名称": "豆瓣资源""name": "豆瓣资源"
+    }},
+    "mozhua": {"mozhua": {
+      "api": "https://mozhuazy.com/api.php/provide/vod","api": "https://mozhuazy.com/api.php/provide/vod",
       "name": "魔爪资源"
     },
     "mdzy": {
@@ -84,6 +84,9 @@
     "xiaomaomi": {
       "api": "https://zy.xmm.hk/api.php/provide/vod",
       "name": "小猫咪资源"
-    }
+    },
+      "maotaizy": {
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
+      "name": "maotaizy"
   }
 }
